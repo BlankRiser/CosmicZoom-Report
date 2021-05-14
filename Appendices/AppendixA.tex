@@ -1,22 +1,55 @@
 % Appendix A
 
-\chapter{Appendix A Title} % Main appendix title
+\chapter{CosmicZoom Website} % Main appendix title
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-Since the chapters are numerically numbered, the appendices shall be numbered using alphabets (English capital letters). The items that can be inserted as appendices are (list is not exhaustive):
+A lot of effort was put into the the design and prototyping of the website to have a great user experience. Tools like Adobe XD, Framer were used to prototype how the website would look like and the amount of content it should contain. The figure below is one of wireframes for one of the exhibits.
 
-\begin{itemize}
-	\item Project synopsis or proposal (if submitted before starting the project)
-	\item Photos
-	\item Software model analysis reports (these shall not be inserted in the main body of the report)
-	\item Project schedules
-	\item Selected material from the data collected
-	\item Miscellaneous analysis and reports
-\end{itemize}
+\paragraph*{Figure} Insects page wireframe [Figure \ref{fig:rb}]
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.3]{Figures/Insects–full.jpg}
+		\caption{Insects page wireframe}
+		\label{fig:rb}
+	\end{center}
+\end{figure}
+
+The wireframe above shows us one of the pages(internally called 'Insects scale page'), and the contents that it may have, which may also change based on later developments. This doesn't consist the navbar or the footer as that was designed during the development phase itself and more emphasis was given to the main body itself, each of the sections within this is divided into contents, so that I can templatize it for all the other pages too. The components from the top are:
+\\
+1, Title Component: It consists of the scale animation i.e the topic which this current exhibit contains information about, a title, and a paragraph of about 50-80 words describing why is this page releavnt to the exhbit.
+
+2. Video Component: It consists of the title of the video, a paragraph containing some more detailed information to refer after watching the video, and then the video itself, All the details including the link of the video comes from the Google Sheet API and are mapped over these components.
+
+3. Image Component: It's the same as video content, but there is an image rather than a video. It also gets all the content from the Google Sheet API.
+
+4. Infographic Content: This component is basically a div container with padding and some media queries for the image placed inside to be responsive. 
+
+\section{Components}
+
+\textbf{Adobe XD}
+Adobe XD is a vector-based digital design tool for websites and apps. It is used to  create and collaborate on everything from prototypes to mockups to full designs. It is developed by Adobe and is available for Windows and macOS. It supports website, mobile, apps,etc to create wireframes and click-through prototypes.
+
+\textbf{Framer}
+Framer is a tool similar to Adobe XD but can be used to design everything, it already has a lot of templates and designs to choose from. It is used to create high-fidelity prototypes with smart features in a very small amount of time. It has a veriety of components like drag and drop, layout tools, typography, building blocks and many many more.
+
+\textbf{React Js}
+ReactJS is a open-source JavaScript library used to build reusable UI components. React is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
 
 
-\section{Appendix A Section 1}
+\textbf{Tailwind CSS}
+TailwindCSS is a utility-first CSS framework packed with CSS classes that can be composed to build any design, directly in React or HTML classes. With Tailwind, you style elements by applying pre-existing classes directly in React. Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. It is a cool way to write inline styling and achieve an awesome interface without writing a single line of our own vanilla CSS.
 
-\subsection{Appendix A Subsection for Section 1}
+\textbf{ Frame Motion }
+It is a library for React that is used to animate all the HTML elements or React components. It's a motion library which is open source used to create animations and gestures. Motion uses the Framer library(the tool that we used to prototype) to create animations. It can be used on any elemnt, whether its an input element, or only a single path of an SVG.
 
-\section{Appendix A Section 2}
+\textbf{Google Sheet API}
+Google sheets API provides us a way to Read, write, and format data in Sheets using the their API. This API has a lot of settings with which we can create beautiful and functional sheets within the code itself. Each spreadsheet has an id associated to it(you can also have a look at this id in the url when you open a google spreadsheet).
+
+\textbf{React Slick - used in creating the custom slider}
+React slick is a react component that can be used to create custom carousel's based on various parameters and CSS tweaking. React-Slick by itself is a component made up of javascript and css which has a basic slider functionality that we have used in this project to create the main page by customizing it a lot.
+
+
+
+% \subsection{Appendix A Subsection for Section 1}
+
+% \section{Appendix A Section 2}

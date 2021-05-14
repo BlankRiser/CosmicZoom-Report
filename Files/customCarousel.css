@@ -1,0 +1,211 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel-container {
+  width: 80%;
+  margin: 10rem auto;
+  height: 400px;
+  margin-top: 10px;
+}
+
+.slick-slider {
+  margin-top: 10px;
+}
+.slick-slide {
+  height: 600px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.Slider {
+  height: 1800px;
+}
+
+.slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.38);
+  transition: transform 300ms;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.slide .desc {
+  visibility: hidden;
+}
+
+.activeSlide {
+  cursor: pointer;
+  transform: scale(0.75);
+  opacity: 1;
+  transition: h3 5s ease-in 0.7s;
+  pointer-events: unset;
+}
+
+.normal {
+  /* transform: scale(0.38); */
+}
+.abnormal {
+  transform: scale(1.1);
+}
+
+.normal {
+  display: inline-block;
+
+  transform: translateY(150px);
+}
+.abnormal {
+  display: inline-block;
+
+  transform: translateY(150px);
+}
+
+.activeSlide .desc {
+  visibility: visible;
+  transform: scale(1);
+  text-align: center;
+}
+
+div.desc {
+  /* background-color: #f0fff4; */
+  margin-top: 150px;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+p.click-notify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5px;
+  font-size: 10px;
+  font-weight: medium;
+  color: #cbd5e0;
+}
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+  color: #718096;
+}
+
+.arrow svg:hover {
+  color: #3a5173;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  h3.bash-name {
+    font-size: clamp(0.5rem, -0.875rem + 6.333333vw, 1rem);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  p.bash-description {
+    font-size: clamp(0.5rem, -0.875rem + 6.333333vw, 1rem);
+    text-align: center;
+    font-size: 9px;
+  }
+  p.click-notify {
+    text-align: center;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-container {
+    width: 80%;
+    margin: 10rem auto;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .slick-slider {
+    margin-top: 10px;
+  }
+  .slick-slide {
+    height: 400px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  Slider {
+    height: 1800px;
+  }
+
+  .slide img {
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  .slide {
+    transform: scale(0.2);
+    transition: transform 300ms;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .slide .desc {
+    visibility: hidden;
+  }
+
+  .activeSlide {
+    cursor: pointer;
+    transform: scale(0.45);
+    opacity: 1;
+    transition: h3 5s ease-in 0.7s;
+    pointer-events: unset;
+  }
+
+  .activeSlide .desc {
+    visibility: visible;
+    transform: inset;
+    text-align: center;
+  }
+  .metric {
+    transform: scale(1.7);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3.bash-name {
+    font-size: clamp(0.5rem, -0.875rem + 6.333333vw, 1rem);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  p.bash-description {
+    font-size: clamp(0.5rem, -0.875rem + 6.333333vw, 1rem);
+    text-align: center;
+    height: 70vh;
+    font-size: 9px;
+  }
+  p.click-notify {
+    text-align: center;
+    font-size: 8px;
+  }
+}
