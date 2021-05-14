@@ -12,6 +12,15 @@ College: Christ School of Engineering and Technology
 
 ### Refrences
 
+[0] Hartson R, Pyla PS. The UX Book: Process and guidelines for ensuring a quality user experience. Elsevier; 2012 Jan 25.
+
+@book{hartson2012ux,
+title={The UX Book: Process and guidelines for ensuring a quality user experience},
+author={Hartson, Rex and Pyla, Pardha S},
+year={2012},
+publisher={Elsevier}
+}
+
 [1] Banks A, Porcello E. Learning React: functional web development with React and Redux. " O'Reilly Media, Inc."; 2017 Apr 27.
 
 @book{banks2017learning,
