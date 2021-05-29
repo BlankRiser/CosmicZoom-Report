@@ -10,7 +10,16 @@ Department: Computer Science and Engineering
 University: Christ (Deemed to be University)
 College: Christ School of Engineering and Technology
 
+### Edit
+
+- Download [MiKTeX](https://miktex.org/download)
+- Open [ProjectReport.tex](ProjectReport.tex) using TeXWorks that also gets installed with MiKTeX.
+
 ### Refrences
+
+Various references I've used in the report, it contains 2 formats of citations, one that is used by educational institutions and the other by BibTeX
+
+```
 
 [0] Hartson R, Pyla PS. The UX Book: Process and guidelines for ensuring a quality user experience. Elsevier; 2012 Jan 25.
 
@@ -201,6 +210,8 @@ journal={Program},
 year={2003},
 publisher={MCB UP Ltd}
 }
+
+```
 
 ### Latex examples
 
